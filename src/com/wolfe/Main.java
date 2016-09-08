@@ -1,5 +1,5 @@
 /*
-    This program calculate the miles per gallon using methods.
+    This program calculate the miles per gallon a method call to perform the calculation.
  */
 package com.wolfe;
 
@@ -16,29 +16,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // Write your code between here...
-
-
         double mpg = calculateMPG();
 
         System.out.println("Miles per Gallon equals: " + mpg);
-
-        // ... and here.
 
         // Close scanners. Good practice to clean up resources you use.
         // Don't try to use scanners after this point. All code that uses scanners goes above here.
         stringScanner.close();
         numberScanner.close();
-
     }
 
+    // This method gets user data and calculates the miles per gallon. mpg returned to caller.
     private static double calculateMPG() {
 
         double milesDriven = 0;
         double gallonsOfGas = 0;
         double mpg = 0;
 
-        System.out.print("Enter the number of miles drive: ");
+        System.out.print("Enter the number of miles driven: ");
         milesDriven = numberScanner.nextDouble();
 
         System.out.print("Enter the number of gallons used: ");
@@ -48,5 +43,4 @@ public class Main {
 
         return mpg;
     }
-
 }
